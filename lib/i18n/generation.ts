@@ -127,3 +127,69 @@ export const generationEnUS = {
     webSearchFailed: 'Web search failed',
   },
 } as const;
+
+export const generationEs = {
+  classroom: {
+    recentClassrooms: 'Recientes',
+    today: 'Hoy',
+    yesterday: 'Ayer',
+    daysAgo: 'días atrás',
+    slides: 'diapositivas',
+    nameCopied: 'Nombre copiado',
+    deleteConfirmTitle: 'Eliminar clase',
+    delete: 'Eliminar',
+  },
+  upload: {
+    pdfSizeLimit: 'Admite archivos PDF de hasta 50 MB',
+    generateFailed: 'Fallo al generar la clase, por favor intenta de nuevo',
+    requirementPlaceholder:
+      'Dime cualquier cosa que quieras aprender, por ejemplo:\n"Enséñame Python desde cero en 30 minutos"\n"Explícame la Transformada de Fourier en la pizarra"\n"Cómo jugar al juego de mesa Avalon"',
+    requirementRequired: 'Por favor ingresa los requisitos del curso',
+    fileTooLarge: 'Archivo demasiado grande. Selecciona un PDF menor a 50 MB',
+  },
+  generation: {
+    // Progress steps (used dynamically via activeStep)
+    analyzingPdf: 'Analizando documento PDF',
+    analyzingPdfDesc: 'Extrayendo estructura y contenido del documento...',
+    generatingOutlines: 'Generando esquema del curso',
+    generatingOutlinesDesc: 'Estructurando la ruta de aprendizaje...',
+    generatingSlideContent: 'Generando contenido de páginas',
+    generatingSlideContentDesc: 'Creando diapositivas, cuestionarios y contenido interactivo...',
+    generatingActions: 'Generando acciones de enseñanza',
+    generatingActionsDesc: 'Organizando narración, enfoque e interacciones...',
+    generationComplete: '¡Generación completada!',
+    generationFailed: 'Generación fallida',
+    generatingCourse: 'Generando curso',
+    openingClassroom: 'Abriendo la clase...',
+    outlineReady: 'Esquema del curso generado',
+    generatingFirstPage: 'Generando la primera página...',
+    firstPageReady: '¡Primera página lista! Abriendo la clase...',
+    speechFailed: 'Fallo en la síntesis de voz',
+    retryScene: 'Reintentar',
+    retryingScene: 'Regenerando...',
+    backToHome: 'Volver al inicio',
+    sessionNotFound: 'Sesión no encontrada',
+    sessionNotFoundDesc: 'Por favor completa los requisitos del curso para iniciar el proceso de generación.',
+    goBackAndRetry: 'Volver e intentar de nuevo',
+    classroomReady: 'Tu entorno de aprendizaje personalizado con IA ha sido generado exitosamente.',
+    aiWorking: 'Agentes IA trabajando...',
+    textTruncated: 'El texto del documento es largo, usando los primeros {n} caracteres para la generación',
+    imageTruncated:
+      'Se encontraron {total} imágenes, superando el límite de {max}. Las imágenes extras solo se describirán con texto',
+    // Agent generation
+    agentGeneration: 'Generando roles de la clase',
+    agentGenerationDesc: 'Generando roles basados en el contenido del curso...',
+    agentRevealTitle: 'Tus roles en la clase',
+    viewAgents: 'Ver roles',
+    continue: 'Continuar',
+    // Outline errors
+    outlineRetrying: 'Problema al generar el esquema, reintentando...',
+    outlineEmptyResponse:
+      'El modelo no devolvió un esquema válido. Verifica la configuración del modelo e intenta de nuevo',
+    outlineGenerateFailed: 'Fallo al generar el esquema, intenta más tarde',
+    // Web Search
+    webSearching: 'Búsqueda en la web',
+    webSearchingDesc: 'Buscando en internet información actualizada',
+    webSearchFailed: 'Fallo en la búsqueda web',
+  },
+} as const;
