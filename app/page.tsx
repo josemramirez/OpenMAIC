@@ -56,14 +56,14 @@ const RECENT_OPEN_STORAGE_KEY = 'recentClassroomsOpen';
 interface FormState {
   pdfFile: File | null;
   requirement: string;
-  language: 'es' as 'en-US' | 'es';
+  language: 'en-US' | 'es';
   webSearch: boolean;
 }
 
 const initialFormState: FormState = {
   pdfFile: null,
   requirement: '',
-  language: 'es',
+  language: 'es' as 'en-US' | 'es',
   webSearch: false,
 };
 
